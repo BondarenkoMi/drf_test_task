@@ -8,3 +8,18 @@
 - Получение информации о пользователе
 - CRUD операции для задач
 - Документация API с использованием Swagger
+
+## Как установить и запустить
+
+Версия python - 3.10.11
+- Склонируйте репозиторий.
+- Создайте базу данных PostgreSql.
+- Создайте файл .env и определите там:
+DB_NAME - имя бд,
+BD_USER - пользователь бд,
+DB_PASSWORD - пароль,
+- Создайте виртуальное окружение. (python3 -m venv venv)
+- Активируйте виртуальное окружение. (source venv/bin/activate)
+- Установите зависимости (pip install -r requirements.txt)
+- Примените миграции. (python3 test_task/manage.py migrate)
+- Запустисте. (python3 test_task/manage.py runserver)
